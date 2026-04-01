@@ -1,0 +1,7 @@
+
+ocr_and_clean.py → PDF → OCR → parse questions → save questions.json
+embedding_methods.py → TF-IDF & BERT embeddings + recommend
+evaluate.py → Top-K accuracy, MRR
+utils.py → JSON loader/helper functions
+main.py → Fit embeddings, simulate queries, evaluate
+app.py → Flask API for user query recommendations

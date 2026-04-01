@@ -1,0 +1,22 @@
+[
+  {
+    "question_text": "Does X n converges in Lp to 0 as n tends to infinity? Justify: 2 . Does Xn converges in probability to 0 as n tends to infinity? Justify:",
+    "options": [],
+    "correct_answer": null
+  },
+  {
+    "question_text": "Does Xn converges almost surely to 0 as n tends to infinity? Justify:",
+    "options": [],
+    "correct_answer": null
+  },
+  {
+    "question_text": ": Let X be a random variable whose characteristic function is p.",
+    "options": [],
+    "correct_answer": null
+  },
+  {
+    "question_text": "Suppose that ECIXI) O _ then E(X) = {v(0). 2 . Suppose that E(lXI?) 0, then E(X2) = #p\"(0).",
+    "options": [],
+    "correct_answer": null
+  }
+]
