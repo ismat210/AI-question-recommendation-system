@@ -1,0 +1,44 @@
+[
+    {
+        "id": "69089e11-387f-4bee-9c9a-88cb70102675",
+        "text": "sample question paper",
+        "topic": null,
+        "source": "upload",
+        "created_at": "2026-04-14T05:50:51.610741"
+    },
+    {
+        "id": "e716d72a-a151-49c6-a49d-9843f8f83e2c",
+        "text": "1. what is linear regression?",
+        "topic": null,
+        "source": "upload",
+        "created_at": "2026-04-14T05:50:51.610741"
+    },
+    {
+        "id": "62d0c7ec-93d1-403e-9c10-bcb3c2643193",
+        "text": "2. explain classification in machine learning.",
+        "topic": null,
+        "source": "upload",
+        "created_at": "2026-04-14T05:50:51.610741"
+    },
+    {
+        "id": "1326cd4b-2d98-4051-b6ab-7f54ec2de3a4",
+        "text": "3. what is overfitting?",
+        "topic": null,
+        "source": "upload",
+        "created_at": "2026-04-14T05:50:51.610741"
+    },
+    {
+        "id": "612498e6-01f0-4995-a9cf-d39f21111ccd",
+        "text": "4. define probability distribution.",
+        "topic": null,
+        "source": "upload",
+        "created_at": "2026-04-14T05:50:51.610741"
+    },
+    {
+        "id": "73b70052-5c56-4667-b47f-c96682757b19",
+        "text": "5. what is clustering?",
+        "topic": null,
+        "source": "upload",
+        "created_at": "2026-04-14T05:50:51.610741"
+    }
+]

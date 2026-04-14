@@ -1,0 +1,7 @@
+[ 2026-04-14 18:30:56,092 ] 31 appli.utils.logger - INFO - Recommendation model loaded successfully
+[ 2026-04-14 18:30:56,092 ] 31 appli.utils.logger - INFO - Recommendation model loaded successfully
+[ 2026-04-14 18:30:56,095 ] 25 appli.utils.logger - INFO -  FastAPI server started successfully
+[ 2026-04-14 18:30:56,104 ] 25 appli.utils.logger - INFO -  FastAPI server started successfully
+[ 2026-04-14 18:30:56,110 ] 31 appli.utils.logger - INFO - Recommendation model loaded successfully
+[ 2026-04-14 18:30:56,123 ] 25 appli.utils.logger - INFO -  FastAPI server started successfully
+[ 2026-04-14 18:40:51,175 ] 57 appli.utils.logger - INFO - Root endpoint called

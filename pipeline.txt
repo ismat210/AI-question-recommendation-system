@@ -1,7 +1,60 @@
 
-ocr_and_clean.py → PDF → OCR → parse questions → save questions.json
-embedding_methods.py → TF-IDF & BERT embeddings + recommend
-evaluate.py → Top-K accuracy, MRR
-utils.py → JSON loader/helper functions
-main.py → Fit embeddings, simulate queries, evaluate
-app.py → Flask API for user query recommendations
+
+                    ┌─────────────────────────────┐
+                    │        USER / CLIENT        │
+                    │  (Postman / Swagger / later │
+                    │        React frontend)       │
+                    └─────────────┬───────────────┘
+                                  │
+                                  ▼
+        ┌──────────────────────────────────────────────┐
+        │              FASTAPI BACKEND                 │
+        │              (main.py)                       │
+        │                                              │
+        │  - CORS enabled                              │
+        │  - Logger + Exception handling              │
+        │  - Routes included                          │
+        └──────────────┬───────────────────────────────┘
+                       │
+        ┌──────────────┴───────────────────────────────┐
+        │                                              │
+        ▼                                              ▼
+┌───────────────────────┐                 ┌────────────────────────┐
+│  UPLOAD API           │                 │  RECOMMEND API         │
+│ /api/upload-file      │                 │ /api/recommend         │
+└──────────┬────────────┘                 └──────────┬─────────────┘
+           │                                          │
+           ▼                                          ▼
+┌──────────────────────────┐             ┌──────────────────────────┐
+│ File Ingestion Layer     │             │ Query Processing Layer   │
+│                          │             │                          │
+│ - PDF / DOCX / TXT       │             │ - User query input      │
+│ - Extract questions      │             │ - Preprocess text       │
+│ - Clean data             │             │                          │
+└──────────┬───────────────┘             └──────────┬───────────────┘
+           │                                          │
+           ▼                                          ▼
+┌──────────────────────────┐             ┌──────────────────────────┐
+│ Data Storage (CURRENT)   │             │ ML PIPELINE              │
+│                          │             │                          │
+│ - JSON / CSV / list      │             │ - TF-IDF model           │
+│                          │             │ - Embedding model (BERT) │
+│                          │             │ - Hybrid scoring         │
+└──────────┬───────────────┘             └──────────┬───────────────┘
+           │                                          │
+           └──────────────────┬───────────────────────┘
+                              ▼
+                ┌─────────────────────────────┐
+                │   Hybrid Recommender        │
+                │                             │
+                │  TF-IDF + BERT similarity   │
+                │  → normalized scoring        │
+                │  → top-K ranking            │
+                └─────────────┬───────────────┘
+                              ▼
+                ┌─────────────────────────────┐
+                │   RESPONSE TO USER          │
+                │                             │
+                │  - Top recommended questions│
+                │  - Scores                   │
+                └─────────────────────────────┘
